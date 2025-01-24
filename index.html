@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <!-- css style link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-container">
+      <main>
+      <form class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search for cities..."
+          name="city"
+        />
+      </form>
+      <div class="main-weather-box">
+        <div class="weather-box">
+          <div class="box-1">
+            <div class="location"></div>
+            <div class="chance-of-rain"></div>
+            <div class="weather temperature"></div>
+          </div>
+          <div class="box-2">
+            <div class="icon-box"></div>
+          </div>
+      </div>
+      <div class="forecast-main-box">
+        <p class="forecast-main-box-heading">Today's Forecast</p>
+        <div class="todays-forecast">
+          <div class="forecast-box one">
+          <div class="time"></div>
+          <div class="icon-box"></div> 
+          <div class="weather"></div>
+        </div>
+        <div class="forecast-box two">
+          <div class="time"></div>
+          <div class="icon-box"></div> 
+          <div class="weather"></div>
+        </div>
+        <div class="forecast-box three">
+          <div class="time"></div>
+          <div class="icon-box"></div> 
+          <div class="weather"></div>
+        </div>
+       <div class="forecast-box four">
+          <div class="time"></div>
+          <div class="icon-box"></div> 
+          <div class="weather"></div>
+      </div>
+      <div class="forecast-box five">
+          <div class="time"></div>
+          <div class="icon-box"></div> 
+          <div class="weather"></div>
+        </div>
+        <div class="forecast-box six">
+          <div class="time"></div>
+          <div class="icon-box"></div> 
+          <div class="weather"></div>
+        </div>
+      </div>
+    </div>
+    <div class="air-condition-main-box">
+      <p class="air-condition-main-box-heading">Air Conditions</p>
+      <div class="air-condition">
+        <div class="air-condition-box">
+          <div class="air-conditions feelslike"><i class="fas fa-thermometer-half"></i> Feels Like</div>
+          <div class="air-conditions-val feels-like-value"></div>
+        </div>
+        <div class="air-condition-box">
+          <div class="air-conditions chanceofrain"><i class="fas fa-tint"></i> Chance of Rain</div>
+          <div class="air-conditions-val chance-of-rain-value">0%</div>
+        </div>
+        <div class="air-condition-box">
+          <div class="air-conditions humidity"><i class="fas fa-water"></i> Humidity</div>
+          <div class="air-conditions-val humidity-value"></div>
+        </div>
+        <div class="air-condition-box">
+          <div class="air-conditions windspeed"><i class="fas fa-wind"></i> Wind Speed</div>
+          <div class="air-conditions-val wind-speed-value"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="second-main-container">
+    <div class="seven-day-forecast-main-box">
+      <p class="forecast-main-box-heading">Seven Days Forecast</p>
+      <div class="seven-days-forecast">
+        <div class="sevendays-forecast-box s-one">
+        <div class="day"></div>
+        <div class="icon-box"></div> 
+        <div class="weather-conditions"></div>
+        <div class="weather"></div>
+      </div>
+      <div class="sevendays-forecast-box s-two">
+        <div class="day"></div>
+        <div class="icon-box"></div> 
+        <div class="weather-conditions"></div>
+        <div class="weather"></div>
+      </div>
+      <div class="sevendays-forecast-box s-three">
+        <div class="day"></div>
+        <div class="icon-box"></div> 
+        <div class="weather-conditions"></div>
+        <div class="weather"></div>
+      </div>
+     <div class="sevendays-forecast-box s-four">
+      <div class="day"></div>
+      <div class="icon-box"></div> 
+      <div class="weather-conditions"></div>
+      <div class="weather"></div>
+    </div>
+    <div class="sevendays-forecast-box s-five">
+      <div class="day"></div>
+      <div class="icon-box"></div> 
+      <div class="weather-conditions"></div>
+      <div class="weather"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="last-txt"><p>This weather website is created by Ayan, <a href="" target="_blank">open-sourced on GitHub</a>, and hosted on Netlify.</p></div>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>
